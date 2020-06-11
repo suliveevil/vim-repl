@@ -146,7 +146,7 @@ function! repl#REPLGetShell()
         return 'cmd.exe'
     elseif has('iVim')
         return 'ivish'
-    else
+    elseif has('linux')
         return 'bash'
     endif
 endfunction
