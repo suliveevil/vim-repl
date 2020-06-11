@@ -143,6 +143,8 @@ function! repl#REPLGetShell()
         return g:repl_program['default']
     elseif has('win32')
         return 'cmd.exe'
+    elseif has('iVim')
+        return 'ivish'
     else
         return 'bash'
     endif
