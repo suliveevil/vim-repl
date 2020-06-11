@@ -100,7 +100,8 @@ function! repl#REPLGetName()
         else
             return l:repl_options
 	else
-		return 'bash'
+		" return 'bash'
+		return 'ivish'
 	endif
 endfunction
 
